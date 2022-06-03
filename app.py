@@ -81,7 +81,7 @@ def add_multiple_cards():
 
 
 # Endpoint to query all cards
-@app.route('/card/get', methods=['GET'])
+@app.route('/card/get', methods=['GET'])     
 def get_all_cards():
     
     all_cards = db.session.query(Card).all()
